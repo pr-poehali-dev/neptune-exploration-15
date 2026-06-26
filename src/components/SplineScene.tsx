@@ -45,20 +45,7 @@ export default function SplineScene() {
         </div>
       )}
 
-      {!hasError && (
-        <Suspense fallback={null}>
-          <Spline
-            scene="https://prod.spline.design/l8gr6AhxxCqDIdBx/scene.splinecode"
-            onLoad={handleLoad}
-            onError={handleError}
-            style={{
-              width: "100%",
-              height: "100%",
-              background: "transparent",
-            }}
-          />
-        </Suspense>
-      )}
+      <div className="absolute inset-0 bg-black/50" />
     </div>
   )
 }
