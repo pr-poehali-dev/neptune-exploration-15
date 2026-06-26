@@ -1,6 +1,46 @@
 import Icon from "@/components/ui/icon"
 
-const CDN_BASE = "https://cdn.poehali.dev/templates/meet-jack"
+const NeonESLogo = ({ size = 300 }: { size?: number }) => (
+  <div
+    className="flex items-center justify-center select-none"
+    style={{
+      width: size,
+      height: size * 0.7,
+    }}
+  >
+    <span
+      style={{
+        fontFamily: "var(--font-montserrat)",
+        fontWeight: 900,
+        fontSize: size * 0.52,
+        letterSpacing: "-0.04em",
+        lineHeight: 1,
+        color: "hsl(0 0% 8%)",
+        textShadow: `
+          0 1px 0 hsl(0 90% 70%),
+          0 2px 0 hsl(0 90% 60%),
+          0 3px 0 hsl(0 90% 50%),
+          0 4px 0 hsl(0 90% 40%),
+          0 5px 0 hsl(0 90% 30%),
+          0 6px 0 hsl(0 90% 20%),
+          0 0 20px hsl(0 100% 60%),
+          0 0 40px hsl(0 100% 55%),
+          0 0 80px hsl(0 100% 50%),
+          0 0 120px hsl(0 100% 45%),
+          inset 0 -2px 4px rgba(255,255,255,0.15)
+        `,
+        filter: "drop-shadow(0 0 30px hsl(0 100% 50%))",
+        transform: "perspective(300px) rotateX(6deg)",
+        background: "linear-gradient(180deg, hsl(0 90% 80%) 0%, hsl(0 90% 50%) 40%, hsl(0 90% 30%) 100%)",
+        WebkitBackgroundClip: "text",
+        WebkitTextFillColor: "transparent",
+        backgroundClip: "text",
+      }}
+    >
+      ES
+    </span>
+  </div>
+)
 
 export default function Footer() {
   return (
@@ -58,27 +98,33 @@ export default function Footer() {
           </div>
 
           <div className="hidden md:flex flex-1 justify-end items-center relative">
-            <div className="relative">
-              <img
-                src={`${CDN_BASE}/jack-footer-ufo-new.png`}
-                alt="Макс в НЛО"
-                width={400}
-                height={300}
-                className="object-contain mb-0 mt-4"
+            <div className="relative flex items-center justify-center">
+              <div
+                className="absolute rounded-full"
+                style={{
+                  width: 280,
+                  height: 280,
+                  background: "radial-gradient(circle, hsl(0 90% 30% / 0.25) 0%, transparent 70%)",
+                  filter: "blur(20px)",
+                }}
               />
+              <NeonESLogo size={320} />
             </div>
           </div>
         </div>
 
         <div className="md:hidden flex justify-center mt-12">
-          <div className="relative">
-            <img
-              src={`${CDN_BASE}/jack-footer-ufo-new.png`}
-              alt="Макс в НЛО"
-              width={500}
-              height={375}
-              className="object-contain"
+          <div className="relative flex items-center justify-center">
+            <div
+              className="absolute rounded-full"
+              style={{
+                width: 220,
+                height: 220,
+                background: "radial-gradient(circle, hsl(0 90% 30% / 0.25) 0%, transparent 70%)",
+                filter: "blur(20px)",
+              }}
             />
+            <NeonESLogo size={260} />
           </div>
         </div>
 

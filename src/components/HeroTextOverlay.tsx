@@ -9,16 +9,17 @@ export default function HeroTextOverlay() {
           fontWeight: 900,
           letterSpacing: "-0.02em",
           lineHeight: 1,
-          color: "hsl(0 90% 50%)",
-          textShadow: `
-            2px 2px 0px hsl(0 90% 30%),
-            4px 4px 0px hsl(0 90% 22%),
-            6px 6px 0px hsl(0 90% 15%),
-            8px 8px 0px rgba(0,0,0,0.4),
-            0 0 40px hsl(0 90% 50% / 0.6),
-            0 0 80px hsl(0 90% 40% / 0.3)
+          background: "linear-gradient(180deg, hsl(0 90% 85%) 0%, hsl(0 90% 60%) 35%, hsl(0 90% 40%) 70%, hsl(0 90% 20%) 100%)",
+          WebkitBackgroundClip: "text",
+          WebkitTextFillColor: "transparent",
+          backgroundClip: "text",
+          filter: `
+            drop-shadow(0 0 12px hsl(0 100% 60%))
+            drop-shadow(0 0 30px hsl(0 100% 55%))
+            drop-shadow(0 0 60px hsl(0 100% 45%))
+            drop-shadow(0 4px 8px rgba(0,0,0,0.8))
           `,
-          transform: "perspective(400px) rotateX(8deg)",
+          transform: "perspective(500px) rotateX(10deg)",
         }}
       >
         ES
