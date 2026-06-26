@@ -10,12 +10,12 @@ export default function HeroTextOverlay() {
           paintOrder: "stroke fill",
         }}
       >
-        МАКС
+        CS CAMP
       </h1>
       <p className="text-foreground font-mono text-sm md:text-base max-w-xs tracking-widest lg:text-base">
-        Ваш надежный гид
+        Игровой лагерь
         <br />
-        в мире баз данных
+        Counter-Strike 1.6
       </p>
     </div>
   )
