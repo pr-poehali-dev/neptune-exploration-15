@@ -24,7 +24,7 @@ export default function Footer() {
             <div className="space-y-4 text-foreground">
               <div className="flex items-start gap-3">
                 <span className="text-accent mt-1">*</span>
-                <p className="text-sm">CS Camp — это сообщество игроков Counter-Strike 1.6, объединённых одним сервером.</p>
+                <p className="text-sm">ESCAPE-CS — это сообщество игроков Counter-Strike 1.6, объединённых одним сервером.</p>
               </div>
               <div className="flex items-start gap-3">
                 <span className="text-accent mt-1">*</span>
@@ -108,7 +108,7 @@ export default function Footer() {
         </div>
 
         <div className="w-full px-6 py-4 border-t border-border flex md:flex-row items-center justify-between gap-2 flex-row">
-          <p className="text-muted-foreground text-sm font-mono">2025 CS Camp</p>
+          <p className="text-muted-foreground text-sm font-mono">2025 ESCAPE-CS</p>
           <p className="text-muted-foreground text-sm font-mono">poehali.dev</p>
         </div>
       </div>

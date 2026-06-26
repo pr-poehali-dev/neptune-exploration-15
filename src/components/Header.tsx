@@ -8,7 +8,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/0 backdrop-blur-sm">
       <div className="flex items-center justify-between px-6 py-4 text-transparent">
         <div className="flex items-center gap-3">
-          <span className="font-mono font-bold text-foreground text-lg tracking-widest">CS CAMP</span>
+          <span className="font-mono font-bold text-lg tracking-widest" style={{ color: "hsl(0 90% 55%)" }}>ESCAPE-CS</span>
         </div>
 
         <div className="flex items-center gap-2">
