@@ -77,25 +77,13 @@ export default function Footer() {
 
             <div className="flex items-center gap-3 mt-8 justify-center md:justify-start">
               <a
-                href="#"
+                href="https://t.me/escape-cs"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Telegram"
                 className="flex items-center justify-center w-11 h-11 rounded-full border border-border bg-background/40 text-foreground hover:bg-primary hover:text-primary-foreground hover:scale-110 transition-all duration-300"
               >
                 <Icon name="Send" size={20} />
-              </a>
-              <a
-                href="#"
-                aria-label="ВКонтакте"
-                className="flex items-center justify-center w-11 h-11 rounded-full border border-border bg-background/40 text-foreground hover:bg-primary hover:text-primary-foreground hover:scale-110 transition-all duration-300"
-              >
-                <Icon name="Share2" size={20} />
-              </a>
-              <a
-                href="#"
-                aria-label="YouTube"
-                className="flex items-center justify-center w-11 h-11 rounded-full border border-border bg-background/40 text-foreground hover:bg-primary hover:text-primary-foreground hover:scale-110 transition-all duration-300"
-              >
-                <Icon name="Youtube" size={20} />
               </a>
             </div>
           </div>
