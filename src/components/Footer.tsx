@@ -1,46 +1,49 @@
 import Icon from "@/components/ui/icon"
 
-const NeonESLogo = ({ size = 300 }: { size?: number }) => (
-  <div
-    className="flex items-center justify-center select-none animate-neon-pulse"
-    style={{
-      width: size,
-      height: size * 0.7,
-    }}
-  >
-    <span
-      style={{
-        fontFamily: "var(--font-montserrat)",
-        fontWeight: 900,
-        fontSize: size * 0.52,
-        letterSpacing: "-0.04em",
-        lineHeight: 1,
-        color: "hsl(0 0% 8%)",
-        textShadow: `
-          0 1px 0 hsl(0 90% 70%),
-          0 2px 0 hsl(0 90% 60%),
-          0 3px 0 hsl(0 90% 50%),
-          0 4px 0 hsl(0 90% 40%),
-          0 5px 0 hsl(0 90% 30%),
-          0 6px 0 hsl(0 90% 20%),
-          0 0 20px hsl(0 100% 60%),
-          0 0 40px hsl(0 100% 55%),
-          0 0 80px hsl(0 100% 50%),
-          0 0 120px hsl(0 100% 45%),
-          inset 0 -2px 4px rgba(255,255,255,0.15)
-        `,
-        filter: "drop-shadow(0 0 30px hsl(0 100% 50%))",
-        transform: "perspective(300px) rotateX(6deg)",
-        background: "linear-gradient(180deg, hsl(0 90% 80%) 0%, hsl(0 90% 50%) 40%, hsl(0 90% 30%) 100%)",
-        WebkitBackgroundClip: "text",
-        WebkitTextFillColor: "transparent",
-        backgroundClip: "text",
-      }}
+const NeonESLogo = ({ size = 300 }: { size?: number }) => {
+  const fontSize = size * 0.52
+  const w = size
+  const h = size * 0.7
+  return (
+    <div
+      className="flex items-center justify-center select-none animate-neon-pulse"
+      style={{ width: w, height: h }}
     >
-      ES
-    </span>
-  </div>
-)
+      <svg width={w} height={h} viewBox={`0 0 ${w} ${h}`} overflow="visible">
+        <defs>
+          <linearGradient id="es-grad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="hsl(0,90%,85%)" />
+            <stop offset="40%" stopColor="hsl(0,90%,60%)" />
+            <stop offset="100%" stopColor="hsl(0,90%,25%)" />
+          </linearGradient>
+          <linearGradient id="es-stroke-grad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="hsl(0,100%,95%)" />
+            <stop offset="50%" stopColor="hsl(0,100%,65%)" />
+            <stop offset="100%" stopColor="hsl(0,100%,40%)" />
+          </linearGradient>
+        </defs>
+        <text
+          x="50%"
+          y="72%"
+          textAnchor="middle"
+          dominantBaseline="auto"
+          fill="url(#es-grad)"
+          stroke="url(#es-stroke-grad)"
+          strokeWidth={size * 0.008}
+          strokeLinejoin="round"
+          style={{
+            fontFamily: "var(--font-montserrat)",
+            fontWeight: 900,
+            fontSize: fontSize,
+            letterSpacing: "-0.04em",
+          }}
+        >
+          ES
+        </text>
+      </svg>
+    </div>
+  )
+}
 
 export default function Footer() {
   return (
