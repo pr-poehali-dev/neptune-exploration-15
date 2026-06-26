@@ -15,7 +15,7 @@ export default function RotatingTextAccent() {
             <defs>
               <path id="circle" d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" />
             </defs>
-            <text className="text-xs fill-white font-medium">
+            <text className="text-xs font-medium" fill="hsl(0, 90%, 55%)">
               <textPath href="#circle" startOffset="0%">
                 {text.repeat(2)}
               </textPath>
