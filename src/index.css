@@ -74,6 +74,41 @@
   animation: spin-slow 20s linear infinite;
 }
 
+@keyframes neon-pulse {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 8px hsl(0 100% 65%))
+      drop-shadow(0 0 25px hsl(0 100% 55%))
+      drop-shadow(0 0 50px hsl(0 100% 45%))
+      drop-shadow(0 4px 8px rgba(0, 0, 0, 0.8));
+    opacity: 1;
+  }
+  45% {
+    filter: drop-shadow(0 0 4px hsl(0 100% 55%))
+      drop-shadow(0 0 14px hsl(0 100% 45%))
+      drop-shadow(0 0 28px hsl(0 100% 35%))
+      drop-shadow(0 4px 8px rgba(0, 0, 0, 0.8));
+    opacity: 0.88;
+  }
+  50% {
+    filter: drop-shadow(0 0 2px hsl(0 100% 50%))
+      drop-shadow(0 0 8px hsl(0 100% 40%)) drop-shadow(0 0 16px hsl(0 100% 30%))
+      drop-shadow(0 4px 8px rgba(0, 0, 0, 0.8));
+    opacity: 0.82;
+  }
+  55% {
+    filter: drop-shadow(0 0 8px hsl(0 100% 65%))
+      drop-shadow(0 0 30px hsl(0 100% 55%))
+      drop-shadow(0 0 60px hsl(0 100% 48%))
+      drop-shadow(0 4px 8px rgba(0, 0, 0, 0.8));
+    opacity: 1;
+  }
+}
+
+.animate-neon-pulse {
+  animation: neon-pulse 3.5s ease-in-out infinite;
+}
+
 .rounded-4xl {
   border-radius: 2rem;
 }

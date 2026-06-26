@@ -2,7 +2,7 @@ export default function HeroTextOverlay() {
   return (
     <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center px-4">
       <div
-        className="mb-4 select-none"
+        className="mb-4 select-none animate-neon-pulse"
         style={{
           fontSize: "clamp(80px, 18vw, 200px)",
           fontFamily: "var(--font-montserrat)",

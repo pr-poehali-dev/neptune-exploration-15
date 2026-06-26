@@ -2,7 +2,7 @@ import Icon from "@/components/ui/icon"
 
 const NeonESLogo = ({ size = 300 }: { size?: number }) => (
   <div
-    className="flex items-center justify-center select-none"
+    className="flex items-center justify-center select-none animate-neon-pulse"
     style={{
       width: size,
       height: size * 0.7,
