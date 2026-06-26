@@ -18,7 +18,15 @@ export default function SplineScene() {
   }
 
   return (
-    <div className="absolute inset-0 w-full h-full bg-background">
+    <div
+      className="absolute inset-0 w-full h-full bg-background"
+      style={{
+        backgroundImage: `url('https://cdn.poehali.dev/projects/7a96156c-b52c-48c7-8917-37392894e74a/files/6ef5ba0f-458b-4df1-bd63-e435cac765f7.jpg')`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       {isLoading && (
         <div className="absolute inset-0 w-full h-full flex items-center justify-center">
           <div className="text-foreground text-center">
