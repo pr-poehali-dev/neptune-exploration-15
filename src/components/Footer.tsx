@@ -85,6 +85,24 @@ export default function Footer() {
               >
                 <Icon name="Send" size={20} />
               </a>
+              <a
+                href="https://vk.ru/esccs"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="ВКонтакте"
+                className="flex items-center justify-center w-11 h-11 rounded-full border border-border bg-background/40 text-foreground hover:bg-primary hover:text-primary-foreground hover:scale-110 transition-all duration-300"
+              >
+                <Icon name="Share2" size={20} />
+              </a>
+              <a
+                href="https://youtube.com/@escape-cs?si=nz-TejHgiyzCk-Hu"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                className="flex items-center justify-center w-11 h-11 rounded-full border border-border bg-background/40 text-foreground hover:bg-primary hover:text-primary-foreground hover:scale-110 transition-all duration-300"
+              >
+                <Icon name="Youtube" size={20} />
+              </a>
             </div>
           </div>
 
